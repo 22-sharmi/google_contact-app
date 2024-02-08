@@ -2,12 +2,9 @@ import { FaUserPlus, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Home from "../crud2/Home";
-import Home1 from "../crud2/Home1";
-import Home2 from "../crud2/Home2";
 import { useNavigate } from "react-router-dom";
 
-export default function Nav() {
-  const [searchTerm, setSearchTerm] = useState("");
+export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const navi= useNavigate();
   function handleCreateContactClick(){
